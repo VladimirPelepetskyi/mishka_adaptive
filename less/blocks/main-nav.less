@@ -189,3 +189,41 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+.categories__title {
+	.text-reset;
+	padding: 69px 30px 0px;
+
+	font-family: "OpenSans-Bold";
+	font-size: 27px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+}
+
+.categories__list {
+	.list-reset;
+}
+
+.categories__item {
+	a {
+		display: block;
+
+		font-family: "OpenSans-Bold";
+		font-size: 19px;
+		line-height: 24px;
+		font-weight: bold;
+		color: #ffffff;
+
+	}
+
+	&:nth-child(2n+1) {
+		background-color: #63d1bb;
+	}
+
+	&:nth-child(2n) {
+		background-color: #56c3b2;
+	}
+
+}

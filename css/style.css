@@ -196,3 +196,33 @@ img {
   top: 50%;
   transform: translateY(-50%);
 }
+.categories__title {
+  margin: 0;
+  padding: 0;
+  padding: 69px 30px 0px;
+  font-family: "OpenSans-Bold";
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+.categories__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.categories__item a {
+  display: block;
+  font-family: "OpenSans-Bold";
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.categories__item:nth-child(2n+1) {
+  background-color: #63d1bb;
+}
+.categories__item:nth-child(2n) {
+  background-color: #56c3b2;
+}
