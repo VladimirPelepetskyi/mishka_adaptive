@@ -85,9 +85,10 @@
 	<main class="page-main">
 		<h1 class="visually-hidden">Главная страница онлайн-магазина вязаных товаров «Мишка»</h1>
 		<section class="productweek">
+		<div class="productweek__wrapper">
 			<h2 class="visually-hidden">Товар недели</h2>
 			<div class="productweek__wrapper-content">
-				<div class="productweek__wrapper">
+				<div class="productweek__wrapper-text">
 					<h3 class="productweek__title">Вязаные корзинки</h3>
 					<p class="productweek__mark">Товар недели</p>
 				</div>
@@ -118,24 +119,25 @@
 						</td>
 					</tr>
 				</table>
-				<span class="productweek__price">Цена: 990 руб.</span>
-				<button class="productweek__button">Заказать</button>
 			</div>
 			<div class="productweek__wrapper-picture">
-				<p class="productweek__picture">
-					<picture>
-						<!--
+				<picture>
+					<!--
 									<source type="image/webp" media="(min-width: 1200px)" srcset="img/product-of-week-desktop@1x.webp 1x, img/product-of-week-desktop@2x.webp 2x">
 									<source type="image/webp" media="(min-width: 768px)" srcset="img/product-of-week-tablet@1x.webp 1x, img/product-of-week-tablet@2x.webp 2x">
 									<source type="image/webp" srcset="img/product-of-week-mobile@1x.webp 1x, img/product-of-week-mobile@2x.webp 2x">
 -->
 
-						<source media="(min-width: 1200px)" srcset="img/product-of-week-desktop@1x.jpg 1x, img/product-of-week-desktop@2x.jpg 2x">
-						<source media="(min-width: 768px)" srcset="img/product-of-week-tablet@1x.jpg 1x, img/product-of-week-tablet@2x.jpg 2x">
-						<img class="photos__picture" src="img/product-of-week-mobile@1x.jpg" srcset="img/product-of-week-mobile@2x.jpg 2x" alt="Фото товара недели">
-					</picture>
-				</p>
+					<source media="(min-width: 1200px)" srcset="img/product-of-week-desktop@1x.jpg 1x, img/product-of-week-desktop@2x.jpg 2x">
+					<source media="(min-width: 768px)" srcset="img/product-of-week-tablet@1x.jpg 1x, img/product-of-week-tablet@2x.jpg 2x">
+					<img class="photos__picture" src="img/product-of-week-mobile@1x.jpg" srcset="img/product-of-week-mobile@2x.jpg 2x" alt="Фото товара недели">
+				</picture>
 			</div>
+			<div class="productweek__price-wrapper">
+				<span class="productweek__price">Цена: 990 руб.</span>
+				<button class="productweek__button">Заказать</button>
+			</div>
+</div>
 		</section>
 		<section class="aboutus">
 			<h2 class="aboutus__title">Коротко о нас:</h2>
