@@ -525,3 +525,87 @@ img {
   background: none;
   cursor: pointer;
 }
+.aboutus {
+  padding: 33px 9.375% 30px;
+}
+.aboutus__title {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans-Bold";
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+.aboutus__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 85px;
+}
+.aboutus__item {
+  position: relative;
+  margin-bottom: 82px;
+  font-family: "OpenSans-Bold";
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.aboutus__item:last-child {
+  margin-bottom: 0;
+}
+.aboutus__item--flower::before {
+  content: "";
+  position: absolute;
+  top: -53px;
+  left: 8px;
+  width: 32px;
+  height: 37px;
+  background-image: url('../img/icon-flower.svg');
+}
+.aboutus__item--money::before {
+  content: "";
+  position: absolute;
+  top: -52px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background-image: url('../img/icon-money.svg');
+}
+.aboutus__item--heart::before {
+  content: "";
+  position: absolute;
+  top: -51px;
+  left: 7px;
+  width: 34px;
+  height: 27px;
+  background-image: url('../img/icon-heart.svg');
+}
+.aboutus__item--ball::before {
+  content: "";
+  position: absolute;
+  top: -54px;
+  left: 3px;
+  width: 35px;
+  height: 34px;
+  background-image: url('../img/icon-ball.svg');
+}
+.aboutus__item--rocket::before {
+  content: "";
+  position: absolute;
+  top: -53px;
+  left: -6px;
+  width: 55px;
+  height: 23px;
+  background-image: url('../img/icon-rocket.svg');
+}
+.aboutus__item--gift::before {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background-image: url('../img/icon-gift.svg');
+}
