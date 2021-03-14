@@ -29,6 +29,10 @@
 	font-weight: bold;
 	color: #000000;
 
+	br {
+		display: none;
+	}
+
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -115,5 +119,61 @@
 		height: 32px;
 
 		background-image: url('../img/icon-gift.svg');
+	}
+}
+
+@media (min-width:@tablet-width) {
+	.aboutus {
+		max-width: 1050px;
+		margin: 0 auto;
+		padding: 60px 50px 0px;
+	}
+
+	.aboutus__title {
+		font-size: 43px;
+		line-height: 50px;
+	}
+
+	.aboutus__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.aboutus__item {
+		margin-bottom: 112px;
+		width: 50%;
+
+		font-size: 20px;
+		line-height: 22px;
+
+		br {
+			display: block;
+		}
+
+	}
+
+	.aboutus__item--flower {
+		order: 1;
+	}
+
+	.aboutus__item--money {
+		order: 3;
+	}
+
+	.aboutus__item--heart {
+		order: 5;
+	}
+
+	.aboutus__item--ball {
+		order: 2;
+	}
+
+	.aboutus__item--rocket {
+		order: 4;
+	}
+
+	.aboutus__item--gift {
+		order: 6;
 	}
 }
