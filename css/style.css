@@ -796,8 +796,8 @@ img {
 }
 @media (min-width: 768px) {
   .reviews {
-    margin: -36px auto 0px;
-    max-width: 1050px;
+    margin-top: -36px;
+    margin-bottom: 78px;
     background-image: url("../img/bg-reviews@1x.jpg");
     background-repeat: no-repeat;
     background-position: left center;
@@ -943,6 +943,59 @@ img {
   background: none;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .contacts {
+    padding: 62px 0px 57px;
+  }
+  .contacts__wrapper {
+    padding: 0px 50px;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+  .contacts__title {
+    position: relative;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .contacts__title::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 0;
+    width: 47px;
+    height: 81px;
+    background-image: url('../img/icon-flag.svg');
+  }
+  .contacts__list {
+    margin-top: 49px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts__item {
+    width: 50%;
+  }
+  .contacts__item-name {
+    font-size: 17px;
+    margin-right: 27px;
+  }
+  .contacts__item-link {
+    font-size: 17px;
+  }
+  .contacts__item-mail::after {
+    bottom: 30px;
+  }
+  .map__wrapper {
+    margin-top: 56px;
+  }
+  .contacts__write-wrapper {
+    padding: 0;
+    margin-top: 55px;
+  }
+  .contacts__write {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
 .page-footer {
   padding: 25px 9.375%;
   background-color: #f1f1f1;
@@ -996,4 +1049,28 @@ img {
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+}
+@media (min-width: 768px) {
+  .page-footer {
+    padding: 53px 50px;
+  }
+  .page-footer-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-footer-wrapper::after {
+    content: none;
+  }
+  .page-footer__logo {
+    width: 33.33333333%;
+    display: block;
+  }
+  .page-footer__social {
+    width: 33.33333333%;
+  }
+  .page-footer__copyright {
+    margin-top: 0;
+  }
 }

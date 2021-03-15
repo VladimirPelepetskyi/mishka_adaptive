@@ -64,5 +64,35 @@
 	line-height: 18px;
 	font-weight: bold;
 	color: #000000;
+}
 
+@media (min-width:@tablet-width) {
+	.page-footer {
+		padding: 53px 50px;
+	}
+
+	.page-footer-wrapper {
+		max-width: 1050px;
+		margin: 0 auto;
+		flex-direction: row;
+		justify-content: space-between;
+
+		&::after {
+			content: none;
+		}
+	}
+
+	.page-footer__logo {
+		width: 100%/3;
+		display: block;
+	}
+
+	.page-footer__social {
+		width: 100%/3;
+	}
+
+	.page-footer__copyright {
+		margin-top: 0;
+
+	}
 }
