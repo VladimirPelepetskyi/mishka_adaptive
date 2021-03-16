@@ -89,7 +89,7 @@
 				<h2 class="visually-hidden">Товар недели</h2>
 				<div class="productweek__wrapper-text">
 					<h3 class="productweek__title">Вязаные корзинки</h3>
-					<p class="productweek__mark">Товар недели</p>
+					<p class="productweek__mark">Товар <br class="productweek__mark-br"> недели</p>
 				</div>
 				<div class="productweek__wrapper-content">
 					<p class="productweek__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -231,6 +231,29 @@
 			</div>
 		</div>
 	</footer>
+
+	<section class="basket basket-none">
+		<h2 class="basket__title">Добавить в корзину</h2>
+		<form action="https://echo.htmlacademy.ru" method="post" class="basket__form">
+			<legend class="basket__legend">Выберите размер:</legend>
+			<ul class="basket__list">
+				<li class="basket__item">
+					<input type="radio" class="visually-hidden filter-input-radio" name="size" value="size-s" id="s-radio" checked>
+					<label for="s-radio" class="basket__name">s</label>
+				</li>
+				<li class="basket__item">
+					<input type="radio" class="visually-hidden filter-input-radio" name="size" value="size-m" id="m-radio">
+					<label for="m-radio" class="basket__name">m</label>
+				</li>
+				<li class="basket__item">
+					<input type="radio" class="visually-hidden filter-input-radio" name="size" value="size-l" id="l-radio">
+					<label for="l-radio" class="basket__name">l</label>
+				</li>
+			</ul>
+			<button class="basket__submit" type="submit">Добавить</button>
+		</form>
+	</section>
+
 	<script src="scripts/main-nav.js"></script>
 </body>
 

@@ -42,6 +42,10 @@
 	text-transform: uppercase;
 }
 
+.productweek__mark-br {
+	display: none;
+}
+
 .productweek__desc {
 	.text-reset;
 
@@ -183,5 +187,54 @@
 
 	.productweek__button {
 		margin-top: 34px;
+	}
+}
+
+@media (min-width:@desktop-width) {
+	.productweek {
+		&::after {
+			max-width: 1050px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.productweek__wrapper {
+		padding: 120px 0px 73px;
+	}
+
+	.productweek__mark-br {
+		display: block;
+	}
+
+	.productweek__wrapper-text {
+		justify-content: flex-start;
+	}
+
+	.productweek__title {
+		font-size: 53px;
+		line-height: 57px;
+
+		order: 1;
+	}
+
+	.productweek__mark {
+		width: 175px;
+	}
+
+	.productweek__wrapper-content {
+		width: 27.81%;
+		margin-left: 175px;
+	}
+
+	.productweek__wrapper-picture {
+		margin-top: -165px;
+
+		z-index: -1;
+	}
+
+	.productweek__price-wrapper {
+		width: 27.81%;
+		margin-left: 175px;
 	}
 }
