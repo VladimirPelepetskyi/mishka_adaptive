@@ -1387,9 +1387,8 @@ img {
 @media (min-width: 768px) {
   .catalog {
     padding: 80px 50px 0px;
-    margin-bottom: 53px;
     max-width: 1050px;
-    margin: 0 auto;
+    margin: 0 auto 53px;
   }
   .catalog__item {
     max-width: initial;
@@ -1401,6 +1400,7 @@ img {
     width: 50%;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     box-sizing: border-box;
   }
   .catalog__product-name {
@@ -1439,6 +1439,112 @@ img {
   .catalog__wrapper-product {
     width: 100%;
     min-height: 197px;
+  }
+}
+.making {
+  padding: 0px 9.375%;
+  margin-bottom: 58px;
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .making {
+    padding: 0px 7%;
+  }
+}
+.making__wrapper {
+  padding: 22px 0px 32px;
+  border: 1px solid #ececec;
+}
+.making__wrapper-picture {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .making__picture {
+    max-width: inherit;
+    width: 100%;
+  }
+}
+.making__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: 0;
+}
+.making__title {
+  margin: 0;
+  padding: 0;
+  margin: 0px auto 24px;
+  position: relative;
+  width: 130px;
+  font-family: "OpenSans-Bold";
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+.making__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -48px;
+  width: 32px;
+  height: 22px;
+  background-image: url('../img/icon-video.svg');
+}
+.making__wrapper-bottom {
+  margin-top: 23px;
+  padding: 0px 33px;
+}
+.making__desc {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans-Regular";
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
+  text-align: left;
+}
+.making__button-order {
+  width: 100%;
+  margin-top: 25px;
+  padding: 16px 20px;
+  display: block;
+  font-family: "OpenSans-Bold";
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #444444;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  background: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .making {
+    padding: 0px 50px;
+    margin-bottom: 63px;
+    max-width: 729.48px;
+    margin: 0 auto 63px;
+  }
+  .making__wrapper {
+    padding: 0px 0px 45px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .making__title-br {
+    display: block;
+  }
+  .making__wrapper-picture {
+    width: 100%;
+    order: -1;
   }
 }
 .page-footer {
