@@ -14,7 +14,9 @@
 	font-display: swap;
 	src: url("../fonts/opensansbold.woff2") format("woff2"), url("fonts/opensansbold.woff") format("woff");
 }
+
 body {
+	position: relative;
 	min-width: @mobile-width;
 	font-family: "OpenSans-Regular", "Arial", sans-serif;
 }
@@ -37,4 +39,16 @@ input[type="radio"].visually-hidden {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.bg-modal {	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 99;
+}
+
+.bg-modal-none {
+	display: none;
 }

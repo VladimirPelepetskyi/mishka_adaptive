@@ -136,9 +136,18 @@
 		width: 34px;
 		height: 34px;
 
-		border: 2px solid #444444;
+		border: 2px solid rgba(68, 68, 68);
 
 		border-radius: 50%;
+	}
+
+	& + label:hover::before,
+	& + label:focus::before {
+		border: 2px solid #62d1ba;
+	}
+
+	& + label:active::before {
+		border: 2px solid rgba(68, 68, 68, 0.3);
 	}
 
 	&:checked + label::after {
@@ -160,13 +169,15 @@
 
 .type__name {
 	display: block;
-	margin-left: 62px;
+	padding-left: 62px;
 
 	font-family: "OpenSans-Bold";
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
 	color: #000000;
+
+	cursor: pointer;
 }
 
 
@@ -178,6 +189,8 @@
 .color__item {
 	position: relative;
 	margin-bottom: 44px;
+
+	cursor: pointer;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -216,6 +229,15 @@
 		border: 2px solid #444444;
 	}
 
+	& + label:hover::before,
+	& + label:focus::before {
+		border: 2px solid #62d1ba;
+	}
+
+	& + label:active::before {
+		border: 2px solid rgba(68, 68, 68, 0.3);
+	}
+
 	&:checked + label span::before {
 		content: "";
 		position: absolute;
@@ -246,13 +268,15 @@
 
 .color__name {
 	display: block;
-	margin-left: 62px;
+	padding-left: 62px;
 
 	font-family: "OpenSans-Bold";
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
 	color: #000000;
+
+	cursor: pointer;
 }
 
 .introduce__list {
@@ -287,10 +311,10 @@
 	width: 100%;
 
 	font-family: "OpenSans-Regular";
-	font-size: 17px;
+	font-size: 19px;
 	line-height: 18px;
 	font-weight: normal;
-	color: #000000;
+	color: #444444;
 	text-align: left;
 
 	border: 0;
@@ -306,6 +330,23 @@
 		font-weight: normal;
 		color: rgba(68, 68, 68, 0.3);
 		text-align: left;
+	}
+
+	&:hover,
+	&:focus {
+		border-bottom: 2px solid #62d1ba;
+	}
+}
+
+.contacts__input {
+	padding-right: 40px;
+
+	&:hover + svg,
+	&:focus + svg {
+		path {
+			fill: #62d1ba;
+			opacity: 1;
+		}
 	}
 }
 
@@ -343,6 +384,11 @@
 
 	border: 2px solid #444444;
 	resize: none;
+
+	&:hover,
+	&:focus {
+		border: 2px solid #62d1ba;
+	}
 }
 
 .orders__submit-wrapper {
@@ -383,6 +429,17 @@
 	border: 2px solid #444444;
 	background: none;
 	cursor: pointer;
+	outline: none;
+
+	&:hover,
+	&:focus {
+		color: rgba(255, 255, 255);
+		background-color: #444444;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+	}
 }
 
 @media (min-width:@tablet-width) {
@@ -455,7 +512,7 @@
 
 	.type__name,
 	.color__name {
-		margin-left: 81px;
+		padding-left: 81px;
 
 		font-size: 19px;
 	}
@@ -491,6 +548,10 @@
 			font-size: 19px;
 
 		}
+	}
+
+	.contacts__input {
+		padding-right: 60px;
 	}
 
 	.contacts-form__list {
@@ -600,6 +661,12 @@
 	.orders__submit-wrapper {
 		width: 700px;
 	}
+
+
+	.contacts__input {
+		padding-right: 44px;
+	}
+
 
 	.color__item {
 		width: 100%/3;

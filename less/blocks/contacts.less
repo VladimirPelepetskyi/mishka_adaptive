@@ -54,6 +54,15 @@
 
 		background-color: #62d1ba;
 	}
+
+	&:hover,
+	&:focus {
+		color: #46c1ae;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .contacts__item-name {
@@ -83,6 +92,11 @@
 	}
 }
 
+.iframe-map {
+	width: 100%;
+	height: 100%;
+}
+
 .contacts__write-wrapper {
 	padding: 0px 9.375%;
 	margin-top: 39px;
@@ -105,6 +119,17 @@
 	border: 2px solid #444444;
 	background: none;
 	cursor: pointer;
+	outline: none;
+
+	&:hover,
+	&:focus {
+		color: rgba(255, 255, 255);
+		background-color: #444444;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+	}
 }
 
 @media (min-width:@tablet-width) {

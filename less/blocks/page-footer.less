@@ -47,11 +47,38 @@
 	align-items: center;
 }
 
+.social__link {
+
+	&:hover path,
+	&:focus path {
+		fill: #46c1ae;
+	}
+
+	&:active path {
+		opacity: 0.3;
+	}
+}
+
+
 .page-footer__copyright {
 	margin-top: 47px;
 
 	display: flex;
 	align-items: center;
+
+	cursor: pointer;
+
+	&:hover path,
+	&:focus path {
+		fill: #46c1ae;
+	}
+
+	&:active path,
+	&:active .copyright__text {
+		opacity: 0.3;
+	}
+
+
 }
 
 .copyright__text {
@@ -63,8 +90,9 @@
 	font-size: 19px;
 	line-height: 18px;
 	font-weight: bold;
-	color: #000000;
+	color: rgba(0, 0, 0);
 }
+
 
 @media (min-width:@tablet-width) {
 	.page-footer {
@@ -85,6 +113,20 @@
 	.page-footer__logo {
 		width: 100%/3;
 		display: block;
+	}
+
+	.page-footer__inner-page {
+		.page-footer__logo {
+
+			&:hover path,
+			&:focus path {
+				fill: #46c1ae;
+			}
+
+			&:active path {
+				opacity: 0.3;
+			}
+		}
 	}
 
 	.page-footer__social {

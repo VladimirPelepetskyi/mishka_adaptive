@@ -37,11 +37,9 @@ module.exports = function (grunt) {
 		uglify: {
 			style: {
 				files: {
-					"scripts/failure.min.js": ["scripts/failure.js"],
 					"scripts/main-nav.min.js": ["scripts/main-nav.js"],
-					"scripts/prices.min.js": ["scripts/prices.js"],
-					"scripts/reviews__toggles.min.js": ["scripts/reviews__toggles.js"],
-					"scripts/success.min.js": ["scripts/success.js"]
+					"scripts/basket-catalog.min.js": ["scripts/basket-index.js"],
+					"scripts/basket-index.min.js": ["scripts/basket-catalog.js"]
 				}
 			}
 		},

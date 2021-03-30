@@ -74,6 +74,8 @@
 
 	border: 1px solid #ececec;
 	background: none;
+	cursor: pointer;
+	outline: none;
 
 	&--left {
 		background: url('../img/icon-left-arrow.svg') no-repeat 50% 50% #ffffff;
@@ -81,6 +83,15 @@
 
 	&--right {
 		background: url('../img/icon-right-arrow.svg') no-repeat 50% 50% #ffffff;
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
 	}
 }
 
@@ -103,6 +114,17 @@
 	border: 2px solid #444444;
 	background: none;
 	cursor: pointer;
+	outline: none;
+
+	&:hover,
+	&:focus {
+		color: rgba(255, 255, 255);
+		background-color: #444444;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+	}
 }
 
 @media (min-width:@tablet-width) {

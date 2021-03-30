@@ -13,6 +13,7 @@
 
 	box-shadow: 0 7px 15px rgba(0, 0, 0, .15);
 	box-sizing: border-box;
+	z-index: 100;
 }
 
 .basket__title {
@@ -56,7 +57,7 @@
 	display: flex;
 	justify-content: center;
 }
- 
+
 .basket-input-radio {
 	& + label::before {
 		content: "";
@@ -68,11 +69,14 @@
 		width: 95.13%;
 		height: 48px;
 
-		border: 2px solid #ececec;
+		border: 2px solid rgba(68, 68, 68, 0.1);
 	}
-}
 
-.basket-input-radio {
+	& + label:hover::before,
+	& + label:focus::before {
+		border: 2px solid rgba(68, 68, 68, 0.3);
+	}
+
 	&:checked + label::before {
 		content: "";
 		position: absolute;
@@ -97,6 +101,8 @@
 	font-weight: bold;
 	color: #444444;
 	text-transform: uppercase;
+
+	cursor: pointer;
 }
 
 .basket__submit {
@@ -118,13 +124,21 @@
 	background-color: #63d1bb;
 	border: 0;
 	cursor: pointer;
+	outline: none;
+
+	&:hover,
+	&:focus {
+		background-color: #2aa78e;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+	}
 }
 
 .basket-none {
 	display: none;
 }
-
-
 @media (min-width:@tablet-width) {
 	.basket {
 		padding: 37px 0px 46px;
