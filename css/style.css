@@ -480,7 +480,10 @@ img {
   }
   .categories__item:hover a,
   .categories__item:focus a {
-    padding-bottom: 40px;
+    padding-bottom: 32.5px;
+  }
+  .categories__item img {
+    min-height: 62px;
   }
   .inner-page__title {
     padding-top: 99px;
@@ -2350,6 +2353,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.social__link {
+  cursor: pointer;
 }
 .social__link:hover path,
 .social__link:focus path {
